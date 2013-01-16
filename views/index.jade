@@ -1,0 +1,23 @@
+extends layout
+
+block content
+	head
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		br
+		canvas(id="canv",style="border:2px solid #111111;")
+		script(type='text/javascript')
+			var canv = document.getElementById('canv');
+			var ctx = canv.getContext('2d');
+			var urlString = "#{image_urls}";
+			var urls = urlString.split(',');
+			canv.width = document.body.offsetWidth - 100;
+			canv.height = 160;
+		-each script in js
+			script(type='text/javascript', src= script)
