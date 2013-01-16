@@ -8,7 +8,8 @@
   "dependencies": {
     "jade": "*",
     "express": "3.0.6",
-    "jsdom": "0.3.x"
+    "jsdom": "0.3.x",
+    "request": "*"
   },
   "engines": {
     "node": "0.8.x",
